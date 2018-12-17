@@ -1,0 +1,23 @@
+.stepper-container {
+    background-color: rgba(100,100,0,0.03);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+.stepper-container .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stepper-container select {
+    width: 100%;
+}
+
+.stepper-container button.next {
+    margin-left: 10px;
+}
+.stepper-container button.next, .stepper-container button.back  {
+    border: 1px solid gray;
+    background: pink;
+}

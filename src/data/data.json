@@ -1,0 +1,221 @@
+[
+  {
+    "title": "Step 1",
+    "list": [
+      {
+        "id": null,
+        "value": "Choose an item"
+      },
+      {
+        "id": 1,
+        "value": "Item 1"
+      },
+      {
+        "id": 2,
+        "value": "Item 2"
+      },
+      {
+        "id": 3,
+        "value": "Item 3"
+      }
+    ]
+  },
+  {
+    "title": "Step 2",
+    "list": [
+      {
+        "id": null,
+        "value": "Choose an item"
+      },
+      {
+        "id": 1,
+        "value": "Item 1.1",
+        "prevStepId": 1
+      },
+      {
+        "id": 2,
+        "value": "Item 1.2",
+        "prevStepId": 1
+      },
+      {
+        "id": 3,
+        "value": "Item 1.3",
+        "prevStepId": 1
+      },
+      {
+        "id": 4,
+        "value": "Item 2.1",
+        "prevStepId": 2
+      },
+      {
+        "id": 5,
+        "value": "Item 2.2",
+        "prevStepId": 2
+      },
+      {
+        "id": 6,
+        "value": "Item 2.3",
+        "prevStepId": 2
+      },
+      {
+        "id": 7,
+        "value": "Item 3.1",
+        "prevStepId": 3
+      },
+      {
+        "id": 8,
+        "value": "Item 3.2",
+        "prevStepId": 3
+      },
+      {
+        "id": 9,
+        "value": "Item 3.3",
+        "prevStepId": 3
+      }
+    ]
+  },
+  {
+    "title": "Step 3",
+    "list": [
+      {
+        "id": null,
+        "value": "Choose an item"
+      },
+      {
+        "id": 1,
+        "value": "Item 1.1.1",
+        "prevStepId": 1
+      },
+      {
+        "id": 2,
+        "value": "Item 1.1.2",
+        "prevStepId": 1
+      },
+      {
+        "id": 3,
+        "value": "Item 1.1.3",
+        "prevStepId": 1
+      },
+      {
+        "id": 4,
+        "value": "Item 1.2.1",
+        "prevStepId": 2
+      },
+      {
+        "id": 5,
+        "value": "Item 1.2.2",
+        "prevStepId": 2
+      },
+      {
+        "id": 6,
+        "value": "Item 1.2.3",
+        "prevStepId": 2
+      },
+      {
+        "id": 7,
+        "value": "Item 1.3.1",
+        "prevStepId": 3
+      },
+      {
+        "id": 8,
+        "value": "Item 1.3.2",
+        "prevStepId": 3
+      },
+      {
+        "id": 9,
+        "value": "Item 1.3.3",
+        "prevStepId": 3
+      },
+      {
+        "id": 10,
+        "value": "Item 2.1.1",
+        "prevStepId": 4
+      },
+      {
+        "id": 11,
+        "value": "Item 2.1.2",
+        "prevStepId": 4
+      },
+      {
+        "id": 12,
+        "value": "Item 2.1.3",
+        "prevStepId": 4
+      },
+      {
+        "id": 13,
+        "value": "Item 2.2.1",
+        "prevStepId": 5
+      },
+      {
+        "id": 14,
+        "value": "Item 2.2.2",
+        "prevStepId": 5
+      },
+      {
+        "id": 15,
+        "value": "Item 2.2.3",
+        "prevStepId": 5
+      },
+      {
+        "id": 16,
+        "value": "Item 2.3.1",
+        "prevStepId": 6
+      },
+      {
+        "id": 17,
+        "value": "Item 2.3.2",
+        "prevStepId": 6
+      },
+      {
+        "id": 18,
+        "value": "Item 2.3.3",
+        "prevStepId": 6
+      },
+      {
+        "id": 19,
+        "value": "Item 3.1.1",
+        "prevStepId": 7
+      },
+      {
+        "id": 20,
+        "value": "Item 3.1.2",
+        "prevStepId": 7
+      },
+      {
+        "id": 21,
+        "value": "Item 3.1.3",
+        "prevStepId": 7
+      },
+      {
+        "id": 22,
+        "value": "Item 3.2.1",
+        "prevStepId": 8
+      },
+      {
+        "id": 23,
+        "value": "Item 3.2.2",
+        "prevStepId": 8
+      },
+      {
+        "id": 24,
+        "value": "Item 3.2.3",
+        "prevStepId": 8
+      },
+      {
+        "id": 25,
+        "value": "Item 3.3.1",
+        "prevStepId": 9
+      },
+      {
+        "id": 26,
+        "value": "Item 3.3.2",
+        "prevStepId": 9
+      },
+      {
+        "id": 27,
+        "value": "Item 3.3.3",
+        "prevStepId": 9
+      }
+    ]
+  }
+]
