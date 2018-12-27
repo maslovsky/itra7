@@ -39,9 +39,11 @@ export default class Stepper extends Component<IStepperProps, IStepperState> {
     }
 
     onSelect(activeStepIndex: number, id: number | null) {
-        this.state.data[activeStepIndex].list.forEach(x => x.selected = x.id === id);
+        const newData: Array<IDataModel> = Object.assign([], this.state.data);
 
-        this.setState({data: this.state.data});
+        newData[activeStepIndex].list.forEach(x => x.selected = x.id === id);
+
+        this.setState({data: newData});
     }
 
     getStepSource() {
