@@ -3,11 +3,22 @@ import React, {Component} from 'react';
 import Step from './step/step';
 import StepSummary from './step-summary/step-summary';
 
+import {IDataModel} from '../../models/data-model';
+
 import './stepper.css';
 
-export default class Stepper extends Component {
-    constructor(props) {
-        super();
+interface IStepperState {
+    activeStepIndex: number,
+    data: Array<IDataModel>
+}
+
+interface IStepperProps {
+    data: Array<IDataModel>
+}
+
+export default class Stepper extends Component<IStepperProps, IStepperState> {
+    constructor(props: IStepperProps) {
+        super(props);
 
         this.state = {
             activeStepIndex: 0,
@@ -27,7 +38,7 @@ export default class Stepper extends Component {
         this.setState({activeStepIndex: activeStepIndex - 1});
     }
 
-    onSelect(activeStepIndex, id) {
+    onSelect(activeStepIndex: number, id: number | null) {
         this.state.data[activeStepIndex].list.forEach(x => x.selected = x.id === id);
 
         this.setState({data: this.state.data});
@@ -40,7 +51,7 @@ export default class Stepper extends Component {
             return currentStepData;
         }
 
-        const selectedParentId = this.state.data[this.state.activeStepIndex - 1].list.find(x => x.selected).id;
+        const selectedParentId = this.state.data[this.state.activeStepIndex - 1].list.find(x => !!x.selected)!.id;
 
         const filteredList = currentStepData.list.filter(x => x.prevStepId === selectedParentId || x.prevStepId === undefined);
 
@@ -68,7 +79,7 @@ export default class Stepper extends Component {
 
     hasSelectedValue() {
         const currentSource = this.state.data[this.state.activeStepIndex].list;
-        return currentSource.some(x => x.selected && x.id !== null);
+        return currentSource.some(x => !!x.selected && x.id !== null);
     }
 
     renderStep() {
@@ -81,6 +92,6 @@ export default class Stepper extends Component {
     }
 
     renderStepSummary() {
-        return (<StepSummary data={this.state.data}></StepSummary>);
+        return (<StepSummary data={this.state.data} />);
     }
 };
