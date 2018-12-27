@@ -43,6 +43,10 @@ export default class Stepper extends Component<IStepperProps, IStepperState> {
 
         newData[activeStepIndex].list.forEach(x => x.selected = x.id === id);
 
+        for (let i = activeStepIndex + 1; i < newData.length; i++) {
+            newData[i].list.forEach(x => x.selected = false);
+        }
+
         this.setState({data: newData});
     }
 
